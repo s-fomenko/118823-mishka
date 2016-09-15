@@ -3,43 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-
-
-    <header class="page-header  clearfix">
+    <header class="page-header">
       <div class="container">
-
         <div class="page-header__logo">
           <img src="http://placehold.it/86x35" width="86" height="35" alt="Mishka">
         </div>
-
         <div class="mobile-menu">
           <div class="mobile-menu__button"></div>
           <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">Каталог товаров</li>
-            <li class="mobile-menu__item">Вязание на заказ</li>
-            <li class="mobile-menu__item">Поиск по сайту</li>
-            <li class="mobile-menu__item">Корзина: пока пуста</li>
+            <li class="mobile-menu__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
           </ul>
         </div>
-
       </div>
     </header>
-
-
     <main>
       <div class="container">
-
-        <section class="feaures">
-          <h1 class="features__header">Милые штуки ручной работы для дома</h1>
-          <div class="features__item">Предметы интерьера</div>
-          <div class="features__item">Детские игрушки</div>
+        <section class="section">
+          <h1 class="section__header">Милые штуки ручной работы для дома</h1>
+          <div class="section__item">Предметы интерьера</div>
+          <div class="section__item">Детские игрушки</div>
         </section>
-
         <article class="promo-block">
-          <h2 class="promo-block__header">Вязаные корзинки<span>товар недели</span></h2>
+          <h2 class="promo-block__header">Вязаные корзинки <span>товар недели</span></h2>
           <p class="promo-block__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="promo-block__table">
             <tr>
@@ -55,11 +53,12 @@
               <td>15 см</td>
             </tr>
           </table>
-          <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
+          <a href="#">
+            <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
+          </a>
           <div class="promo-block__price">Цена: 990 руб.</div>
-          <a href="#" class="promo-block__button">Заказать</a>
+          <a href="#" class="button promo-block__button">Заказать</a>
         </article>
-
         <section class="about">
           <h2 class="about__header">Коротко о нас:</h2>
           <ul class="about__list">
@@ -71,18 +70,16 @@
             <li class="about__item">Поставляется в подарочной упаковке</li>
           </ul>
         </section>
-
         <div class="feedback">
           <h2 class="feedback__header">Отзывы</h2>
-          <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+          <blockquote class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</blockquote>
           <div class="feedback__name">Анастасия Красильникова<span>@misssssiskras</span></div>
           <div class="feedback__controls">
-            <a href=""></a>
-            <a href=""></a>
+            <a href="#" class="feedback__prev"></a>
+            <a href="#" class="feedback__next"></a>
           </div>
-          <a href="#" class="feedback__button">Написать</a>
+          <a href="#" class="button feedback__button">Написать</a>
         </div>
-
         <div class="contacts">
           <div class="contacts__header">Контакты</div>
           <table class="contacts__table">
@@ -95,40 +92,24 @@
               <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
             </tr>
           </table>
+          <!-- TODO: Вставить карту -->
+          <a href="#" class="button contacts__button">Напишите нам</a>
         </div>
-        <!-- TODO: Вставить карту -->
-        <a href="#" class="contacts__button">Напишите нам</a>
-
       </div>
     </main>
-
-
     <footer class="page-footer">
       <div class="container">
-
         <div class="social-link">
-          <div class="social-link__item  instagram">
-            <a href="#">instagram</a>
-          </div>
-          <div class="social-link__item  facebook">
-            <a href="#">facebook</a>
-          </div>
-          <div class="social-link__item  twitter">
-            <a href="#">twitter</a>
-          </div>
+            <a href="#" class="social-link__item  instagram">instagram</a>
+            <a href="#" class="social-link__item  facebook">facebook</a>
+            <a href="#" class="social-link__item  twitter">twitter</a>
         </div>
-
         <div class="copyright">
           <div class="copyright__text">Разработано</div>
-          <div class="copyright__link">
-            <a href="#">html academy</a>
-          </div>
+            <a href="#" class="copyright__link">html academy</a>
         </div>
-
       </div>
     </footer>
-
-
     <div class="modal">
       <h2 class="modal__header">Добавить в корзину</h2>
       <div class="modal__links">
@@ -137,9 +118,7 @@
         <a href="#">M</a>
         <a href="#">L</a>
       </div>
-      <a href="" class="modal__button">Добавить</a>
+      <a href="" class="button modal__button">Добавить</a>
     </div>
-
-
   </body>
 </html>
