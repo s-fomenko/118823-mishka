@@ -7,3 +7,27 @@
     color: #000000;
   }
 }
+
+@media @tablet-widths {
+  .features {
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 0 200px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .features {
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 345px;
+    }
+  }
+}
