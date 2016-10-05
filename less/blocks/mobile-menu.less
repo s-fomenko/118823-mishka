@@ -2,6 +2,8 @@
   background: #ffffff;
 
   &__list {
+    display: none;
+
     list-style: none;
   }
 
@@ -17,4 +19,13 @@
       text-decoration: none;
     }
   }
+}
+
+@media @tablet-widths {
+  .mobile-menu__list {
+    display: flex;
+  }
+}
+
+@media @desktop-widths {
 }

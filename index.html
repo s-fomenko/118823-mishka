@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -34,29 +35,35 @@
       <div class="container">
         <section class="section">
           <h1 class="section__header">Милые штуки ручной работы для дома</h1>
-          <div class="section__item">Предметы интерьера</div>
-          <div class="section__item  section__item--dark">Детские игрушки</div>
+          <div class="section__list">
+            <div class="section__item">Предметы интерьера</div>
+            <div class="section__item  section__item--dark">Детские игрушки</div>
+          </div>
         </section>
         <article class="promo-block">
-          <h2 class="promo-block__header">Вязаные корзинки <span>товар недели</span></h2>
-          <p class="promo-block__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="promo-block__table">
-            <tr>
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
-          <a href="#">
-            <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
-          </a>
+          <div class="promo-block__part">
+            <h2 class="promo-block__header">Вязаные корзинки <span>товар недели</span></h2>
+            <p class="promo-block__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="promo-block__table">
+              <tr>
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr>
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+          </div>
+          <div class="promo-block__part">
+            <a href="#">
+              <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
+            </a>
+        </div>
           <div class="promo-block__price">Цена: 990 руб.</div>
           <a href="#" class="button promo-block__button">Заказать</a>
         </article>
@@ -66,6 +73,8 @@
             <li class="about__item">Экологически чистые материалы</li>
             <li class="about__item">Скандинавский стиль по российской цене</li>
             <li class="about__item">Увеличивает лайкина фотографиях</li>
+          </ul>
+          <ul class="about__list">
             <li class="about__item">Связано вручную с любовью и умилением</li>
             <li class="about__item">Поддержка отечественного производителя</li>
             <li class="about__item">Поставляется в подарочной упаковке</li>
@@ -83,16 +92,16 @@
         </div>
         <div class="contacts">
           <div class="contacts__header">Контакты</div>
-          <table class="contacts__table">
-            <tr>
-              <td>e-mail:</td>
-              <td>info@mimimishkashop.ru</td>
-            </tr>
-            <tr>
-              <td>адрес:</td>
-              <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-            </tr>
-          </table>
+          <div class="contacts__table">
+            <div class="contacts__item">
+              e-mail:
+              info@mimimishkashop.ru
+            </div>
+            <div class="contacts__item">
+              адрес:
+              г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+            </div>
+          </div>
           <!-- TODO: Вставить карту -->
           <a href="#" class="button contacts__button">Напишите нам</a>
         </div>
