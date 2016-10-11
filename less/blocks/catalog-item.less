@@ -1,6 +1,14 @@
 .catalog-item {
   background: #ffffff;
 
+  @media @tablet-widths {
+    display: flex;
+  }
+
+  @media @desktop-widths {
+    display: block;
+  }
+
   &__picture {
     width: 260px;
     height: 195px;
@@ -34,26 +42,16 @@
   }
 }
 
-@media @tablet-widths {
-  .catalog-list {
+.catalog-list {
+  @media @tablet-widths {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .catalog-item {
-    display: flex;
-  }
-}
-
-@media @desktop-widths {
-  .catalog-list {
+  @media @desktop-widths {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  }
-
-  .catalog-item {
-    display: block;
   }
 }

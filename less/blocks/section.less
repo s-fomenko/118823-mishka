@@ -12,6 +12,16 @@
     background: url("/img/hero-mobile@1x.jpg") no-repeat 50% 50%;
   }
 
+  &__list {
+    @media @tablet-widths {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media @desktop-widths {
+    }
+  }
+
   &__item {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -22,22 +32,15 @@
 
     background: #63d1bb;
 
+    @media @tablet-widths {
+      flex-grow: 1;
+    }
+
+    @media @desktop-widths {
+    }
+
     &--dark {
       background: #56c3b2;
     }
   }
-}
-
-@media @tablet-widths {
-  .section__list {
-    display: flex;
-    justify-content: center;
-  }
-
-  .section__item {
-    flex-grow: 1;
-  }
-}
-
-@media @desktop-widths {
 }

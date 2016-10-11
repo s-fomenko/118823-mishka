@@ -3,6 +3,13 @@
 
   background: #ffffff;
 
+  @media @tablet-widths {
+  }
+
+  @media @desktop-widths {
+    display: flex;
+  }
+
   &__header {
     font-size: 17px;
     line-height: 24px;
@@ -18,14 +25,5 @@
     font-size: 13px;
     line-height: 24px;
     color: #444444;
-  }
-}
-
-@media @tablet-widths {
-}
-
-@media @desktop-widths {
-  .production {
-    display: flex;
   }
 }

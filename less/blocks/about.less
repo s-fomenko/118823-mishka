@@ -1,6 +1,13 @@
 .about {
   background: #ffffff;
 
+  @media @tablet-widths {
+    display: flex;
+  }
+
+  @media @desktop-widths {
+  }
+
   &__header {
     font-size: 25px;
     line-height: 30px;
@@ -19,13 +26,4 @@
     line-height: 24px;
     color: #000000;
   }
-}
-
-@media @tablet-widths {
-  .about {
-    display: flex;
-  }
-}
-
-@media @desktop-widths {
 }

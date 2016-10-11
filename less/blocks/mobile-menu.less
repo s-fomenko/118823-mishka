@@ -5,6 +5,13 @@
     display: none;
 
     list-style: none;
+
+    @media @tablet-widths {
+      display: flex;
+    }
+
+    @media @desktop-widths {
+    }
   }
 
   &__item {
@@ -19,13 +26,4 @@
       text-decoration: none;
     }
   }
-}
-
-@media @tablet-widths {
-  .mobile-menu__list {
-    display: flex;
-  }
-}
-
-@media @desktop-widths {
 }

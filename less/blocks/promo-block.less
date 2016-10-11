@@ -1,6 +1,13 @@
 .promo-block {
   background: #ffffff;
 
+  @media @tablet-widths {
+    display: flex;
+  }
+
+  @media @desktop-widths {
+  }
+
   &__header {
     font-size: 25px;
     line-height: 30px;
@@ -31,13 +38,4 @@
     line-height: 24px;
     color: #444444;
   }
-}
-
-@media @tablet-widths {
-  .promo-block {
-    display: flex;
-  }
-}
-
-@media @desktop-widths {
 }
